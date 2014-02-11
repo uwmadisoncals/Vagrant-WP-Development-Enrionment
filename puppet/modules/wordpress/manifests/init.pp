@@ -43,6 +43,7 @@ class wordpress::install{
     command => '/bin/rm -rfv /vagrant/wordpress/wp-content && 
                 /bin/rm -rfv /vagrant/wordpress/wp-config-sample.php && 
                 /bin/ln -sf /vagrant/source/wp-content /vagrant/wordpress/wp-content &&
+                /bin/ln -sf /vagrant/puppet/modules/wordpress/files/.htaccess /vagrant/wordpress/.htaccess &&
                 /bin/ln -sf /vagrant/puppet/modules/wordpress/files/wp-config.php /vagrant/wordpress/wp-config.php ',
   }
 

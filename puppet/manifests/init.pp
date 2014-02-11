@@ -9,3 +9,4 @@ exec { "apt_update":
   class{'mysql::install':}
   class{'grunt::install':}
   class{'wordpress::install':}
+  class{'phpmyadmin':}
